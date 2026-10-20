@@ -118,28 +118,28 @@ async function Student({ params }: any) {
                 {
                     arr[department - 1].students.map((e)=>{
                         return(
-                            <div key={students[e-1].id} className="w-[30%] p-[1=0.5vw] h-[17vw] rounded-[1vw] border">
-                                <div className="w-[100%] flex items-center justify-center gap-[15vw] h-[30%] ">
-                                    <div className="w-[10%] h-[70%] rounder bg-blue-200 text-blue-700 flex justify-center items-center font-bold text-[1.1vw] rounded-[0.5vw]">
+                            <div key={students[e-1].id} className="w-[30%] p-[0.5vw] h-[17vw] rounded-[1vw] border shadow-xs">
+                                <div className="w-[100%] flex items-center justify-between px-[1.5vw] h-[30%]">
+                                    <div className={`w-[2.8vw] h-[2.8vw] ${students[e-1]?.bgColor || "bg-blue-100"} ${students[e-1]?.textColor || "text-blue-700"} flex justify-center items-center font-bold text-[1.1vw] rounded-[0.5vw]`}>
                                         {students[e-1].initials}
                                     </div>
-                                    <div className="w-[25%] h-[50%] rounded flex items-center justify-center border">
+                                    <div className="px-[0.8vw] py-[0.2vw] text-[0.85vw] text-gray-500 rounded flex items-center justify-center border border-gray-200">
                                         {students[e-1].studentId}
                                     </div>
                                 </div>
-                                <div className="w-[100%] font-bold flex pl-[2vw] items-center h-[20%] ">
+                                <div className="w-[100%] font-bold text-[1.2vw] flex pl-[1.5vw] items-center h-[20%]">
                                     {students[e-1].name}
                                 </div>
-                                <div className="w-[100%] gap-[4vw] flex pl-[2vw] items-center h-[20%] ">
-                                    <div className="w-[50%] h-[70%] rounded flex text-[1vw] text-blue-600 bg-blue-200 font-bold items-center justify-center  ">
+                                <div className="w-[100%] gap-[1vw] flex pl-[1.5vw] items-center h-[20%]">
+                                    <div className={`px-[0.8vw] py-[0.3vw] rounded border ${students[e-1]?.deptBorder || "border-blue-200"} ${students[e-1]?.deptBg || "bg-blue-50"} ${students[e-1]?.deptText || "text-blue-700"} text-[0.9vw] font-medium flex items-center justify-center`}>
                                         {students[e-1].department}
                                     </div>
-                                    <div className="w-[40%] h-[80%] flex items-center justify-center font-bold ">
+                                    <div className="text-[0.9vw] text-gray-500 flex items-center font-medium">
                                         {students[e-1].studyYear}
                                     </div>
                                 </div>
-                                <Link className="w-[100%] flex items-center pl-[2vw] border-t font-bold text-blue-600 mt-[1vw] h-[20%]" href={`/studentData/${students[e-1].id}`}>
-                                    {"View >"}
+                                <Link className="w-[100%] flex items-center pl-[1.5vw] border-t font-semibold text-blue-600 hover:text-blue-700 mt-[1vw] h-[20%] text-[1vw]" href={`/studentData/${students[e-1].id}`}>
+                                    {"View profile →"}
                                 </Link>
                             </div>
                         )

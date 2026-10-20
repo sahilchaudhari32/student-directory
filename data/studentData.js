@@ -1,14 +1,19 @@
 const students = [
   {
     id: 1,
-    initials: "KA",
+    initials: "SC",
     studentId: "STU-1010",
-    name: "Kamlesh Chandela",
+    name: "Sahil Chaudhari",
     status: "Active Student",
     department: "Computer Science",
     studyYear: "3rd Year (Junior)",
-    email: "kamlesh.chandela@gmail.com",
+    email: "sahilchaudhari14@gmail.com",
     enrolled: "Fall 2022",
+    bgColor: "bg-blue-100",
+    textColor: "text-blue-700",
+    deptBg: "bg-blue-50",
+    deptText: "text-blue-700",
+    deptBorder: "border-blue-200",
     about:
       "Passionate computer science student interested in software development, distributed systems, and modern web technologies. Enjoys solving programming problems and building practical applications.",
     academicDetails: {
@@ -43,6 +48,11 @@ const students = [
     studyYear: "4th Year (Senior)",
     email: "rahul.sharma@gmail.com",
     enrolled: "Fall 2021",
+    bgColor: "bg-orange-100",
+    textColor: "text-orange-700",
+    deptBg: "bg-orange-50",
+    deptText: "text-orange-700",
+    deptBorder: "border-orange-200",
     about:
       "An enthusiastic IT student focused on networking, cloud computing, and full-stack development. Interested in designing secure and scalable applications.",
     academicDetails: {
@@ -77,6 +87,11 @@ const students = [
     studyYear: "2nd Year (Sophomore)",
     email: "ankit.patel@gmail.com",
     enrolled: "Fall 2023",
+    bgColor: "bg-purple-100",
+    textColor: "text-purple-700",
+    deptBg: "bg-purple-50",
+    deptText: "text-purple-700",
+    deptBorder: "border-purple-200",
     about:
       "A motivated mechanical engineering student interested in machine design, manufacturing processes, and robotics. Enjoys practical projects and engineering experiments.",
     academicDetails: {
@@ -111,6 +126,11 @@ const students = [
     studyYear: "3rd Year (Junior)",
     email: "priya.shah@gmail.com",
     enrolled: "Fall 2022",
+    bgColor: "bg-blue-100",
+    textColor: "text-blue-700",
+    deptBg: "bg-blue-50",
+    deptText: "text-blue-700",
+    deptBorder: "border-blue-200",
     about:
       "A creative computer science student passionate about artificial intelligence, user interface design, and frontend development. Interested in building accessible digital products.",
     academicDetails: {
@@ -145,6 +165,11 @@ const students = [
     studyYear: "3rd Year (Junior)",
     email: "neha.joshi@gmail.com",
     enrolled: "Fall 2022",
+    bgColor: "bg-rose-100",
+    textColor: "text-rose-700",
+    deptBg: "bg-rose-50",
+    deptText: "text-rose-700",
+    deptBorder: "border-rose-200",
     about:
       "A dedicated civil engineering student interested in sustainable construction, structural engineering, and modern infrastructure. Enjoys learning about environmentally friendly building methods.",
     academicDetails: {
@@ -179,6 +204,11 @@ const students = [
     studyYear: "4th Year (Senior)",
     email: "vikas.mehta@gmail.com",
     enrolled: "Fall 2021",
+    bgColor: "bg-indigo-100",
+    textColor: "text-indigo-700",
+    deptBg: "bg-indigo-50",
+    deptText: "text-indigo-700",
+    deptBorder: "border-indigo-200",
     about:
       "A senior IT student interested in cybersecurity, data analytics, and software engineering. Focused on developing reliable applications and learning emerging technologies.",
     academicDetails: {

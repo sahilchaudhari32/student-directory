@@ -10,7 +10,7 @@ export default async function Home({ params }: any) {
     <div className="w-screen border flex justify-center items-center h-[90vh]">
       <div className="w-[80%] border h-[90%]">
         <div className="w-[100%] flex border-b p-4 h-[20%]">
-          <div className="w-[10%] text-[2vw] bg-blue-300 text-blue-800 rounded-[10%] font-bold border flex justify-center font-600 items-center h-[100%]">
+          <div className={`w-[10%] text-[2vw] ${studentData[Number(student) - 1]?.bgColor || "bg-blue-100"} ${studentData[Number(student) - 1]?.textColor || "text-blue-700"} rounded-[10%] font-bold border flex justify-center items-center h-[100%]`}>
             {studentData[Number(student) - 1]?.initials}
           </div>
           <div className="w-[100%] ml-4 h-[100%]">
@@ -18,14 +18,13 @@ export default async function Home({ params }: any) {
               {studentData[Number(student) - 1]?.name}
             </div>
             <div className="w-[100%] h-[50%] flex items-center">
-              <div className="w-[15%] h-[60%] ml-[3%] rounded bg-blue-200 text-[1vw] flex text-blue-800 font-bold justify-center items-center border">
+              <div className="px-[0.8vw] py-[0.2vw] ml-[3%] rounded bg-gray-50 text-[0.9vw] text-gray-600 flex font-medium justify-center items-center border border-gray-200">
                 {studentData[Number(student) - 1]?.studentId}
               </div>
-              <div className="w-[15%] h-[60%] ml-[3%] rounded flex text-green-800 text-[1vw] font-bold justify-center items-center border">
+              <div className="px-[0.8vw] py-[0.2vw] ml-[2%] rounded flex bg-emerald-50 text-emerald-700 border-emerald-200 text-[0.9vw] font-medium justify-center items-center border">
                 {studentData[Number(student) - 1]?.status}
               </div>
             </div>
-
           </div>
         </div>
         <div className="border-b w-[100%] h-[20%]">
